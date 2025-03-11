@@ -20,6 +20,7 @@ public with sharing class JiraProjectJSON {
 	public String projectTemplateKey;	//com.atlassian.jira-core-project-templates:jira-core-simplified-process-control
 	public String projectTypeKey;	//business
 	public String url;	//http://atlassian.com
+	public String id;
 	
     
     public static JiraProjectJSON parse(String json){

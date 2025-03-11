@@ -43,7 +43,7 @@ public with sharing class JiraCallout {
     * @param body 
     * @return HttpResponse 
     **/
-    private static HttpResponse createProject(String body) {
+    public static HttpResponse createProject(String body) {
         return httpHelper('project', 'POST', body);
     }
 }
