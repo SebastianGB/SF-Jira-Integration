@@ -1,0 +1,10 @@
+<!--
+  @description       : 
+  @author            : sebasgarcia
+  @group             : 
+  @last modified on  : 03-12-2025
+  @last modified by  : sebasgarcia
+-->
+<apex:page standardcontroller="Account" extensions="JiraProjectController" action="{!createProject}">
+    <apex:pageMessages></apex:pageMessages>
+</apex:page>

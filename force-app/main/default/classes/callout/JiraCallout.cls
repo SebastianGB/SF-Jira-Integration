@@ -56,4 +56,8 @@ public with sharing class JiraCallout {
     public static HttpResponse updateProject(String body, String projectId) {
         return httpHelper('project/' + projectId, 'PUT', body);
     }
+
+    public static HttpResponse getUser(String email) {
+        return httpHelper('user/search?query=', 'GET', null);
+    }
 }

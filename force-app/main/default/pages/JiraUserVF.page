@@ -1,0 +1,10 @@
+<!--
+  @description       : 
+  @author            : sebasgarcia
+  @group             : 
+  @last modified on  : 03-12-2025
+  @last modified by  : sebasgarcia
+-->
+<apex:page standardController="User" extensions="JiraUserController" action="{!createUser}" >
+
+</apex:page>
