@@ -38,7 +38,7 @@ public with sharing class JiraCallout {
 
 
     /**
-    * @description 
+    * @description Create New Project
     * @author sebasgarcia | 03-11-2025 
     * @param body 
     * @return HttpResponse 
@@ -48,7 +48,7 @@ public with sharing class JiraCallout {
     }
     
     /**
-    * @description 
+    * @description Update Project using Jira Project Id on Account
     * @author sebasgarcia | 03-11-2025 
     * @param body 
     * @return HttpResponse 
@@ -57,7 +57,23 @@ public with sharing class JiraCallout {
         return httpHelper('project/' + projectId, 'PUT', body);
     }
 
+    /**
+    * @description Get User based on user Email
+    * @author sebasgarcia | 03-12-2025 
+    * @param email 
+    * @return HttpResponse 
+    **/
     public static HttpResponse getUser(String email) {
         return httpHelper('user/search?query=', 'GET', null);
+    }
+
+    /**
+    * @description Get Project using Jira Project Id on Account
+    * @author sebasgarcia | 03-12-2025 
+    * @param projectId 
+    * @return HttpResponse 
+    **/
+    public static HttpResponse getProject(String projectId) {
+        return httpHelper('project/' + projectId, 'GET', null);
     }
 }
