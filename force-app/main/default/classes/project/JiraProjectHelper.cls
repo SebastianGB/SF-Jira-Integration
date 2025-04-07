@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : sebasgarcia
  * @group             : 
- * @last modified on  : 03-12-2025
+ * @last modified on  : 03-18-2025
  * @last modified by  : sebasgarcia
 **/
 public with sharing class JiraProjectHelper {
@@ -26,7 +26,7 @@ public with sharing class JiraProjectHelper {
         if(res.getStatusCode() != 201 && res.getStatusCode() != 200) {
             throw new JiraException(res.getBody());
         }
-        
+        System.Debug(res.getStatusCode());
         JiraProjectJSON ProjResponse = JiraProjectJSON.parse(res.getBody());
         acc.Jira_Project_Id__c = ProjResponse.id;
         return acc;

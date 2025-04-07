@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : sebasgarcia
  * @group             : 
- * @last modified on  : 03-12-2025
+ * @last modified on  : 03-18-2025
  * @last modified by  : sebasgarcia
 **/
 public class JiraProjectController {
@@ -22,7 +22,7 @@ public class JiraProjectController {
     
     public PageReference createProject(){
         try {
-            JiraProjectHelper.createOrUpdateAccount(acc, '');
+            JiraProjectHelper.createOrUpdateAccount(acc, acc.JIRA_Project_Lead__r.JIRA_User_Id__c);
             update acc;
             
             return new PageReference('/'+ accId);
