@@ -29,7 +29,7 @@ export default class JiraProjectWizard extends LightningElement {
   projectLead;
   key;
   error;
-  
+
   @wire(getRecord, {
     recordId: "$recordId",
     fields: [PROJECT_KEY, PROJECT_NAME, PROJECT_ID]
@@ -81,6 +81,8 @@ export default class JiraProjectWizard extends LightningElement {
       this.error = e;
     }
   }
+
+  handleClose
 
   async handleProjectCreate() {
     try {

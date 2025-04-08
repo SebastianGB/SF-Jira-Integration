@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : sebasgarcia
  * @group             : 
- * @last modified on  : 03-12-2025
+ * @last modified on  : 04-07-2025
  * @last modified by  : sebasgarcia
 **/
 public with sharing class JiraCallout {
@@ -75,5 +75,15 @@ public with sharing class JiraCallout {
     **/
     public static HttpResponse getProject(String projectId) {
         return httpHelper('project/' + projectId, 'GET', null);
+    }
+
+    /**
+    * @description create version of a project's release
+    * @author sebasgarcia | 04-07-2025 
+    * @param version 
+    * @return HttpResponse 
+    **/
+    public static HttpResponse createVersion(String version) {
+        return httpHelper('version', 'POST', version);
     }
 }
