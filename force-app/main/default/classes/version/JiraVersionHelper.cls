@@ -16,7 +16,7 @@ public with sharing class JiraVersionHelper {
 
         JiraVersionJSON versionResponse = JiraVersionJSON.parse(res.getBody());
 
-        JiraVersionMapping.mapVersionToOpportunity(version, opp);
+        JiraVersionMapping.mapVersionToOpportunity(versionResponse, opp);
         return opp;
     }
 }
