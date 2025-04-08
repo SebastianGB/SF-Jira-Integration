@@ -6,5 +6,5 @@
   @last modified by  : sebasgarcia
 -->
 <apex:page standardcontroller="Account" extensions="JiraProjectController" action="{!createProject}">
-    <apex:pageMessages></apex:pageMessages>
+    <apex:pageMessages ></apex:pageMessages>
 </apex:page>
