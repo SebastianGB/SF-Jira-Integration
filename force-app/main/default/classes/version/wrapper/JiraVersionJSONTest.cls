@@ -1,5 +1,12 @@
+/**
+ * @description       : 
+ * @author            : sebasgarcia
+ * @group             : 
+ * @last modified on  : 04-08-2025
+ * @last modified by  : sebasgarcia
+**/
 @isTest
-private class JiraVersionJSONTest {
+public class JiraVersionJSONTest {
     public static String json = '{'+
 	'  \"archived\": false,'+
 	'  \"description\": \"An excellent version\",'+
